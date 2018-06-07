@@ -1,0 +1,34 @@
+
+img {
+	max-width: 100%;
+	vertical-align: middle;
+}
+
+* {
+	font-family: sans-serif;
+	padding: 0;
+	margin: 0;
+}
+
+.content {
+	max-width: 1024px;
+	margin: 0 auto;
+	min-height: 100vh;
+}
+
+body > .content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#image {
+	max-width: 300px;
+}
+
+#preview {
+	width: 220px;
+	height: 220px;
+	overflow: hidden;
+}
