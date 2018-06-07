@@ -1,0 +1,16 @@
+* {
+	transition: all 400ms;
+}
+
+.parallax {
+	background-image: url(../images/background.jpg);
+	background-size: cover;
+	background-position: center 0px;
+	box-shadow: inset 0 -50px 100px rgba(0,0,0,.5);
+	border-radius: 0 !important;
+	color: #fff;
+}
+
+body {
+	min-height: 200vh;
+}
