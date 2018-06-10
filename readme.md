@@ -3,7 +3,7 @@
 
 ## Menu
 - [Crop images](https://srphilippe.github.io/learning/crop-images)
+- [Discord members Generator](https://srphilippe.github.io/learning/discord-members)
 - [Nice menu](https://srphilippe.github.io/learning/nice-menu/app)
 - [Huskyer](https://srphilippe.github.io/learning/huskyer)
 - [Parallax](https://srphilippe.github.io/learning/parallax)
-[](https://srphilippe.github.io/learning/)
