@@ -1,0 +1,19 @@
+{
+  "name": "nice-menu",
+  "version": "0.0.1",
+  "description": "At this moment I don't know what to put in here",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Philippe Henrique",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-csso": "^3.0.1",
+    "gulp-sass": "^4.0.1",
+    "gulp-util": "^3.0.8",
+    "normalize.css": "^8.0.0"
+  }
+}

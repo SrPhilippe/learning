@@ -1,0 +1,53 @@
+@media screen and (max-width: 768px) {
+    #menu {
+        background: #555;
+        width: 100%;
+        position: absolute;
+
+        .icon,
+        .icon:after,
+        .icon:before {
+            background-color: #fff;
+        }
+
+        .content {
+            align-items: flex-start;
+
+            .menu-mobile {
+                display: block;
+            }
+
+            > ul {
+                // display: none;
+                flex-direction: column;
+                width: 100%;
+
+                &.active {
+                    animation: zoomInDown 0.4s;
+                    display: flex;
+                }
+
+                &.disabled {
+                    animation: zoomOutUp 0.4s;
+                    display: none;
+                }
+
+                a,
+                li {
+                    width: 100%;
+                }
+
+                li {
+                    a {
+                        text-align: center;
+                        color: #fff;
+
+                        &:hover {
+                            background: rgba(0,0,0,.5);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
