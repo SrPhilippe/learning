@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,400i,600,700");
+
+::-webkit-scrollbar {
+    width: 13px;
+    background-color: #111;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #7289DA;
+    border-radius: 25px;
+    box-shadow: inset 0 0 0 2px rgba(0, 0, 0, .5);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+body {
+    color: #99AAB5;
+    background: #23272A;
+    font-size: 18px;
+    font-family: "Fira Sans", arial, sans-serif;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+
+        #controller {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1em;
+
+            .max-visible {
+                margin-bottom: 10px;
+            }
+
+            .control {
+                display: flex;
+
+                input[type="range"] {
+                    margin-right: 15px;
+                }
+
+                input[type="button"] {
+                    transition
+                    color: #fff;
+                    transition: 0.3s ease-in-out;
+                    text-shadow: 0 1px 3px rgba(0, 0, 0, .8);
+                    font-weight: 600;
+                    outline: none;
+                    border-radius: 25px;
+                    padding: 0.5em 0.8em;
+                    cursor: pointer;
+                    border: none;
+                    box-shadow: 0 0 0 2px rgba(0, 0, 0, .3);
+                    background: linear-gradient(180deg, #7289da, hsla(227, 48%, 45%, 1));
+
+                    &:active {
+                        transform: scale(.9);
+                    }
+                }
+            }
+        }
+
+        #users {
+            ul {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                width: 100%;
+
+                img {
+                    width: 75px;
+                    height: 75px;
+                    border-radius: 100%;
+                    transition: 0.3s ease-in-out;
+                    margin: 3px;
+
+                    &:hover {
+                        box-shadow: 0 0 0 3px #7289DA;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+
+img {
+    vertical-align: middle;
+    max-width: 100%;
+}

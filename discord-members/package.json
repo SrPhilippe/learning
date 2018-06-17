@@ -1,0 +1,14 @@
+{
+  "name": "discord-members",
+  "version": "0.0.1",
+  "description": "testing",
+  "main": "index.js",
+  "author": "Philippe Henrique",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-csso": "^3.0.1",
+    "gulp-sass": "^4.0.1"
+  }
+}
