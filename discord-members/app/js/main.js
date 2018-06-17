@@ -1,5 +1,8 @@
 $(() => {
 
+
+    new WOW().init()
+
     // Elements
     let $button = $(".change"),
         $container = $("#users"),
@@ -43,7 +46,8 @@ $(() => {
 
     $button.click(evt => {
         $container.children("ul").empty()
-        let membersID = []
+        let membersID = [],
+            wowDelay = 0
         for (let i = maxUsers; i > 0; i--) {
             let chosenUser = Math.floor((Math.random() * allUsers.length) + 0)
             let user = allUsers[chosenUser]
@@ -51,8 +55,12 @@ $(() => {
                 if (membersID.indexOf(user.id) === -1) { // The indexOf() gives -1 if the value passed is not present
                     membersID.push(user.id)
                     $container.children("ul").append(`
-                            <img class="discord user" title="${user.username}" src="${user.avatar_url}">
+                            <div class="wow user-container zoomInUp" data-wow-delay="${wowDelay + 's'}">
+                                <img class="user" title="${user.username + "#" + user.discriminator}" src="${user.avatar_url}">
+                                <p>${user.username + "#" + user.discriminator}</p>
+                            </div>
                         `)
+                    wowDelay += 0.03
                 } else {
                     i++
                 }
