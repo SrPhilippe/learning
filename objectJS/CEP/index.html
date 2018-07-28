@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Consultar CEP</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="message">
+        <p id="status"></p>
+    </div>
+    <form id="CEP">
+        <input type="number" name="cep">
+        <input type="button" value="Pesquisar">
+    </form>
+
+    <div id="info">
+        <div class="container">
+            <div class="item">
+                <div class="item">
+                    <p>CEP informado</p>
+                    <p class="result"></p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item">
+                    <p class="bairro">Bairro</p>
+                    <p class="result"></p>
+                </div>
+                <div class="item">
+                    <p class="rua">Rua</p>
+                    <p class="result"></p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item">
+                    <p>Estado</p>
+                    <p class="result"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="javascript/index.js"></script>
+</body>
+
+</html>

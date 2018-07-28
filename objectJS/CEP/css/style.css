@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    display: inline-block;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Open Sans';
+    font-size: 18px;
+}
+
+#CEP {
+    padding: 1em;
+}
+
+#CEP input {
+    font-size: 18px;
+    padding: .8em 1.3em;
+}
+
+#CEP input[type="number"] {
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .3);
+    border: none;
+}
+
+#CEP input[type="button"] {
+    cursor: pointer;
+    background: linear-gradient(to bottom left, #fff, rgb(218, 218, 218));
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .3);
+    border-radius: 10px;
+    border: none;
+    color: rgb(104, 104, 104);
+}
+
+#info {}
+
+#info .container>.item {
+    display: flex;
+    flex-direction: column;
+}
+
+#info .item>.item {
+    display: flex;
+    margin-bottom: 10px;
+    max-width: 550px;
+    width: 100%;
+}
+
+#info .item>.item p {
+    padding: .8em 1em;
+}
+
+#info .item>.item p:first-child {
+    background-color: rgba(0, 0, 0, .5);
+    color: #fff;
+    min-width: 40%;
+}
+
+#info .item>.item p:last-child {
+    background: linear-gradient(to bottom left, #fff, rgb(218, 218, 218));
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .3);
+    border-radius: 0 25px 25px 0;
+    min-width: 50%;
+}

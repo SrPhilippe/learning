@@ -8,3 +8,4 @@
 - [Huskyer](https://srphilippe.github.io/learning/huskyer)
 - [Parallax](https://srphilippe.github.io/learning/parallax)
 - [Loading page](https://srphilippe.github.io/learning/loading-page/app)
+- [Query CEP](https://srphilippe.github.io/learning/objectJS/CEP/index.html)
