@@ -8,5 +8,4 @@ sendButton.addEventListener('click', event => {
             console.log(`Trusted event [${event.type}]`)
         }, 1500)
     }
-
 })
