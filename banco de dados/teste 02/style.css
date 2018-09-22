@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700');
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-size: 18px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: #67809F;
+
+}
+
+h1 {
+	color: #fff;
+	text-shadow: 0 1px 5px rgba(0,0,0,.3);
+	margin-bottom: .3em;
+}
+
+form {
+	max-width: 550px;
+	background: #fff;
+	padding: 1.5em;
+	-webkit-box-shadow: 0 0 10px rgba(0,0,0,.5);
+	box-shadow: 0 0 20px rgba(0,0,0,.3);
+}
+
+form label {
+	display: inline-block;
+	margin-bottom: .3em;
+	color: #929292;
+}
+
+form input {
+	display: inline-block;
+	padding: 1em 2em;
+	width: 100%;
+	font-size: 1em;
+	font-weight: 400;
+	color: #6C7A89;
+	-webkit-transition: .4s ease-out;
+	-o-transition: .4s ease-out;
+	transition: .4s ease-out;
+	border: 2px solid #ccc;
+}
+
+form input:focus {
+	outline: none;
+	border-color: #F62459;
+}
+
+form input[type="submit"],
+form input[type="button"] {
+	border: 2px solid transparent;
+	cursor: pointer;
+	color: #fff;
+	background: #F62459;
+}
+
+form input[type="submit"] {
+	margin-bottom: 1em;
+}
+
+form input[type="submit"]:hover,
+form input[type="button"]:hover,
+form input[type="submit"]:focus,
+form input[type="button"]:focus {
+	background: #DB0A5B;
+	border-color: rgba(0,0,0,.3);
+}
+
+.form-info {
+	margin-bottom: 1.3em;
+}
