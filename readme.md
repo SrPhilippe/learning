@@ -1,5 +1,5 @@
-# Test programming
-> This repository was created to test my projects
+# Sobre
+Repositório para testes de aplicações. Caso queira visualizar os projetos e não o código fonte [clique aqui](https://srphilippe.github.io/learning/).
 
 ## Menu
 - [Exercícios Javascript](exercicios-javascript/)
