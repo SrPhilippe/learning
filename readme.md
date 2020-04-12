@@ -2,6 +2,7 @@
 > This repository was created to test my projects
 
 ## Menu
+- [Exercícios Javascript]()
 - [Crop images](https://srphilippe.github.io/learning/crop-images)
 - [Discord members Generator](https://srphilippe.github.io/learning/discord-members/app)
 - [Nice menu](https://srphilippe.github.io/learning/nice-menu/app)
