@@ -42,8 +42,6 @@ body {
     color: rgb(104, 104, 104);
 }
 
-#info {}
-
 #info .container>.item {
     display: flex;
     flex-direction: column;
