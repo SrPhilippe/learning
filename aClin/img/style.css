@@ -1,0 +1,226 @@
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #fafafa;
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .2);
+}
+
+::-webkit-resizer {}
+
+* {
+    box-sizing: border-box !important;
+}
+
+a {
+    display: inline-block !important;
+}
+
+//  MAIN MENU
+.mm-bar.mm-blue.mm-left-align.mm-large {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    >ul {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+
+
+        .mm-button:hover {
+            background-color: rgba(0, 0, 0, .2) !important;
+        }
+
+        // When you hover the menu
+        >.mm-dropdown-hover,
+        >.mm-dropdown-click {
+            &:hover {
+
+                >.mm-button:first-child {
+                    background-color: rgba(0, 0, 0, .2) !important;
+                    color: #fff !important;
+                }
+            }
+        }
+
+        a:last-child:hover {
+            background-color: rgba(0, 0, 0, .2) !important;
+            color: #fff !important;
+        }
+    }
+
+    >p {
+        margin: 0 !important;
+        padding: 2px 8px;
+        display: inline-block;
+        background-color: rgba(0, 0, 0, .3);
+        box-shadow: 0 0 0 1px rgba(255, 255, 255, .3);
+        border-radius: 10px;
+
+    }
+
+    a {
+        >img.mm-padding {
+            margin-bottom: 0;
+            padding: 0;
+            width: 60px !important;
+        }
+
+        &:hover {
+            text-decoration: none !important;
+        }
+    }
+}
+
+// HEADER
+.text-middle.mm-container.mm-card-2.mm-white.mm-round.mm-margin-bottom.col-lg-12 {
+    >h1 {
+        text-align: center !important;
+        padding: 15px 0;
+        margin-bottom: 0;
+    }
+}
+
+//Formulario para login 
+.mm-card-2.mm-round.mm-white.mm-row-padding.mm-col.mm-padding.mm-margin-bottom.mm-center {
+
+    //padding: 0 !important;
+    .mm-container {
+        padding: 0 !important;
+    }
+
+    fieldset {
+        display: inline !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+}
+
+// MAIN PAGE
+.mm-container.mm-theme-l5 {
+    min-height: 100vh;
+    padding: 0 15px;
+    background-image: url('https://srphilippe.github.io/learning/aClin/img/seemless-background.jpg');
+
+    background-color: rgba(255, 255, 255, .9) !important;
+    background-position: 0 !important;
+    background-blend-mode: overlay;
+    background-size: 350px;
+
+    .mm-round,
+    .mm-round-medium {
+        border-radius: 0 !important;
+        box-shadow: 0 0 0 1px rgba(0, 0, 0, .15);
+    }
+
+    .mm-button {
+        box-sizing: content-box;
+        border-radius: 25px;
+        width: 95%;
+        transition-property: background-color, color, box-shadow;
+        transition: ease-out .4s;
+        box-shadow: inset 0 0 0 3px rgba(0, 0, 0, .15);
+
+        &:hover,
+        &:focus {
+            box-shadow: inset 0 0 0 6px rgba(0, 0, 0, .5);
+        }
+    }
+
+    >.row {}
+
+    >.mm-row {
+
+        // 3 ELEMENTOS PRINCIPAIS
+        >div:last-child {
+            padding: 0 !important;
+
+            // Pai dos 3 elementos
+            >div:last-child {
+
+                >* {
+                    padding: 0 5px;
+                }
+            }
+
+            #direita {
+
+                // Formulario USUARIO
+                >div:nth-child(4) {
+                    margin: 0 0 16px 0 !important;
+                    padding: 0 !important;
+                }
+            }
+
+            #centro {
+
+                .mm-button.mm-theme-l1,
+                .mm-button.mm-theme {
+                    margin-top: 10px;
+                }
+
+                >div,
+                >div:nth-child(2)>div {
+                    padding: 0 !important;
+                }
+
+                >div:nth-child(2) {
+                    position: relative;
+                    display: flex;
+
+                    >div {
+                        position: relative;
+                        float: none;
+                        clear: none;
+                    }
+                }
+
+                h6 {
+                    padding: 15px 0;
+                    background: #4daaf6;
+                    color: #fff;
+                }
+
+                // itens comuns
+                form {
+                    select {
+                        resize: none !important;
+                        background-color: transparent !important;
+
+                    }
+
+                    option {
+                        padding: 3px 0;
+                        margin: 1px 0;
+                        box-shadow: inset 0 0 0 2px rgba(0, 0, 0, .3);
+
+                        color: white !important;
+                        text-shadow: 0 1px 3px black;
+
+                        &:active {
+                            color: black !important;
+                            text-shadow: none !important;
+                        }
+                    }
+                }
+
+                form#Pendencias option {
+                    background-color: #d81b1b;
+                }
+
+                form#PendenciasSP option {
+                    background-color: #BfB100;
+                    color: rgba(0,0,0,.8) !important;
+                    text-shadow: none;
+                }
+                
+                form#PendenciasR option {
+                    background-color: #209C20;
+                }
+            }
+        }
+    }
+}
