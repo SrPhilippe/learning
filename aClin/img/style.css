@@ -1,0 +1,145 @@
+::-webkit-scrollbar {
+	 width: 15px;
+}
+ ::-webkit-scrollbar-thumb {
+	 background: #fafafa;
+	 box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .2);
+}
+ * {
+	 box-sizing: border-box !important;
+}
+ a {
+	 display: inline-block !important;
+}
+ .mm-bar.mm-blue.mm-left-align.mm-large {
+	 display: flex;
+	 align-items: center;
+	 justify-content: space-between;
+}
+ .mm-bar.mm-blue.mm-left-align.mm-large > ul {
+	 display: flex;
+	 align-items: center;
+	 margin: 0;
+	 padding: 0;
+}
+ .mm-bar.mm-blue.mm-left-align.mm-large > ul .mm-button:hover {
+	 background-color: rgba(0, 0, 0, .2) !important;
+}
+ .mm-bar.mm-blue.mm-left-align.mm-large > ul > .mm-dropdown-hover:hover > .mm-button:first-child, .mm-bar.mm-blue.mm-left-align.mm-large > ul > .mm-dropdown-click:hover > .mm-button:first-child {
+	 background-color: rgba(0, 0, 0, .2) !important;
+	 color: #fff !important;
+}
+ .mm-bar.mm-blue.mm-left-align.mm-large > ul a:last-child:hover {
+	 background-color: rgba(0, 0, 0, .2) !important;
+	 color: #fff !important;
+}
+ .mm-bar.mm-blue.mm-left-align.mm-large > p {
+	 margin: 0 !important;
+	 padding: 2px 8px;
+	 display: inline-block;
+	 background-color: rgba(0, 0, 0, .3);
+	 box-shadow: 0 0 0 1px rgba(255, 255, 255, .3);
+	 border-radius: 10px;
+}
+ .mm-bar.mm-blue.mm-left-align.mm-large a > img.mm-padding {
+	 margin-bottom: 0;
+	 padding: 0;
+	 width: 60px !important;
+}
+ .mm-bar.mm-blue.mm-left-align.mm-large a:hover {
+	 text-decoration: none !important;
+}
+ .text-middle.mm-container.mm-card-2.mm-white.mm-round.mm-margin-bottom.col-lg-12 > h1 {
+	 text-align: center !important;
+	 padding: 15px 0;
+	 margin-bottom: 0;
+}
+ .mm-card-2.mm-round.mm-white.mm-row-padding.mm-col.mm-padding.mm-margin-bottom.mm-center .mm-container {
+	 padding: 0 !important;
+}
+ .mm-card-2.mm-round.mm-white.mm-row-padding.mm-col.mm-padding.mm-margin-bottom.mm-center fieldset {
+	 display: inline !important;
+	 margin: 0 !important;
+	 padding: 0 !important;
+}
+ .mm-container.mm-theme-l5 {
+	 min-height: 100vh;
+	 padding: 0 15px;
+	 background-image: url('https://srphilippe.github.io/learning/aClin/img/seemless-background.jpg');
+	 background-color: rgba(255, 255, 255, .9) !important;
+	 background-position: 0 !important;
+	 background-blend-mode: overlay;
+	 background-size: 350px;
+}
+ .mm-container.mm-theme-l5 .mm-round, .mm-container.mm-theme-l5 .mm-round-medium {
+	 border-radius: 0 !important;
+	 box-shadow: 0 0 0 1px rgba(0, 0, 0, .15);
+}
+ .mm-container.mm-theme-l5 .mm-button {
+	 box-sizing: content-box;
+	 border-radius: 25px;
+	 width: 95%;
+	 transition-property: background-color, color, box-shadow;
+	 transition: ease-out 0.4s;
+	 box-shadow: inset 0 0 0 3px rgba(0, 0, 0, .15);
+}
+ .mm-container.mm-theme-l5 .mm-button:hover, .mm-container.mm-theme-l5 .mm-button:focus {
+	 box-shadow: inset 0 0 0 6px rgba(0, 0, 0, .5);
+}
+ .mm-container.mm-theme-l5 > .mm-row > div:last-child {
+	 padding: 0 !important;
+}
+ .mm-container.mm-theme-l5 > .mm-row > div:last-child > div:last-child > * {
+	 padding: 0 5px;
+}
+ .mm-container.mm-theme-l5 > .mm-row > div:last-child #direita > div:nth-child(4) {
+	 margin: 0 0 16px 0 !important;
+	 padding: 0 !important;
+}
+ .mm-container.mm-theme-l5 > .mm-row > div:last-child #centro .mm-button.mm-theme-l1, .mm-container.mm-theme-l5 > .mm-row > div:last-child #centro .mm-button.mm-theme {
+	 margin-top: 10px;
+}
+ .mm-container.mm-theme-l5 > .mm-row > div:last-child #centro > div, .mm-container.mm-theme-l5 > .mm-row > div:last-child #centro > div:nth-child(2) > div {
+	 padding: 0 !important;
+}
+ .mm-container.mm-theme-l5 > .mm-row > div:last-child #centro > div:nth-child(2) {
+	 position: relative;
+	 display: flex;
+}
+ .mm-container.mm-theme-l5 > .mm-row > div:last-child #centro > div:nth-child(2) > div {
+	 position: relative;
+	 float: none;
+	 clear: none;
+}
+ .mm-container.mm-theme-l5 > .mm-row > div:last-child #centro h6 {
+	 padding: 15px 0;
+	 background: #4daaf6;
+	 color: #fff;
+}
+ .mm-container.mm-theme-l5 > .mm-row > div:last-child #centro form select {
+	 resize: none !important;
+	 background-color: transparent !important;
+}
+ .mm-container.mm-theme-l5 > .mm-row > div:last-child #centro form option {
+	 padding: 3px 0;
+	 margin: 1px 0;
+	 box-shadow: inset 0 0 0 2px rgba(0, 0, 0, .3);
+	 color: white !important;
+	 text-shadow: 0 1px 3px black;
+}
+ .mm-container.mm-theme-l5 > .mm-row > div:last-child #centro form option:active {
+	 color: black !important;
+	 text-shadow: none !important;
+}
+ .mm-container.mm-theme-l5 > .mm-row > div:last-child #centro form#Pendencias option {
+	 background-color: #d81b1b;
+}
+ .mm-container.mm-theme-l5 > .mm-row > div:last-child #centro form#PendenciasSP option {
+	 background-color: #bfb100;
+	 color: rgba(0, 0, 0, .8) !important;
+	 text-shadow: none;
+}
+ .mm-container.mm-theme-l5 > .mm-row > div:last-child #centro form#PendenciasR option {
+	 background-color: #209c20;
+}
+ 
