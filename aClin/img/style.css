@@ -143,16 +143,12 @@ a {
 .mm-container.mm-theme-l5 > .mm-row > div:last-child #centro > div:nth-child(2) {
 	position: relative;
 	display: flex;
-	flex-direction: column;
 }
 .mm-container.mm-theme-l5 > .mm-row > div:last-child #centro > div:nth-child(2) > div {
 	position: relative;
 	float: none;
 	clear: none;
 	max-width: 100%;
-}
-.mm-container.mm-theme-l5 > .mm-row > div:last-child #centro > div:nth-child(2) > div:nth-child(1) {
-	order: 1;
 }
 .mm-container.mm-theme-l5 > .mm-row > div:last-child #centro legend {
 	margin-bottom: 0;
