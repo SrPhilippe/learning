@@ -1,1 +1,1 @@
-console.log("ALERT!!!!!!!!!!!!!!!!!!!!!!!!!!")
+window.alert(`IM HERE!`)
