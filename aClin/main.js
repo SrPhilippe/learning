@@ -93,5 +93,5 @@ let divbody = document.createElement("div"),
 divbody.classList.add("custom-background")
 body.prepend(divbody)
 
-console.log(`Aclin script ${version} is running into the website.`)
+console.log(`Aclin script V${version} is running into the website.`)
 // End of UL element

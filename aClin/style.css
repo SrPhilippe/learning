@@ -14,9 +14,7 @@ a {
 }
 body {
 	z-index: -1;
-	background-image: url('
-   https://srphilippe.github.io/learning/aClin/img/seemless-background.jpg'
-   );
+	background-image: url('https://srphilippe.github.io/learning/aClin/img/seemless-background.jpg');
 	background-color: transparent !important;
 	background-position: 0 !important;
 	background-blend-mode: overlay;
@@ -133,11 +131,7 @@ h1 {
 	color: #3bab71 !important;
 	font-weight: bold;
 }
-.container #conteudos form[name="
-Saida"
-], .container #conteudos form[name="
-VoltarPainelC"
-], .container #conteudos a {
+.container #conteudos form[name="Saida"], .container #conteudos form[name="VoltarPainelC"], .container #conteudos a {
 	text-align: center;
 }
 .mm-container.mm-theme-l5, .container {
