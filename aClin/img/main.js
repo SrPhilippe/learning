@@ -1,4 +1,10 @@
-const myRequest = 'https://raw.githubusercontent.com/SrPhilippe/learning/master/aClin/img/style.css'
+/* Functions to use some time to get parameters in the URL
+Exemple to get the parameter code:
+let locate = new URL(location.href).searchParams.get('code')
+ */
+
+const myRequest = 'https://raw.githubusercontent.com/SrPhilippe/learning/master/aClin/img/style.css',
+      url = document.location
 
 function addStyle(source) {
   const $body = document.getElementsByTagName("body")[0],
@@ -16,7 +22,9 @@ function addStyle(source) {
     .catch(err => console.log(err))
 }
 
-addStyle(myRequest)
+if (url.pathname != "/index.html") {
+  addStyle(myRequest)
+}
 
 
 let	elMiddle = document.querySelector('#centro'),
