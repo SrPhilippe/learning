@@ -1,0 +1,385 @@
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #fafafa;
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .2);
+}
+
+::-webkit-resizer {}
+
+* {
+    box-sizing: border-box !important;
+    resize: none !important;
+}
+
+a {
+    display: inline-block !important;
+}
+
+body {
+    z-index: -1;
+    background-image: url('https://srphilippe.github.io/learning/aClin/img/seemless-background.jpg');
+    background-color: transparent !important;
+    background-position: 0 !important;
+    background-blend-mode: overlay;
+    background-size: 350px;
+
+    .custom-background {
+        top: 0;
+        left: 0;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: #d3d8dd;
+        mix-blend-mode: screen;
+        z-index: -2;
+    }
+}
+
+.mm-theme-l5 {
+    background-color: transparent !important;
+}
+
+//  MAIN MENU
+.mm-bar.mm-blue.mm-left-align.mm-large {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    >ul {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+
+
+        .mm-button:hover {
+            background-color: rgba(0, 0, 0, .2) !important;
+        }
+
+        // When you hover the menu
+        >.mm-dropdown-hover,
+        >.mm-dropdown-click {
+            &:hover {
+                background-color: rgba(0, 0, 0, .2) !important;
+                color: #fff !important;
+
+                >.mm-button {
+                    color: #fff !important;
+                }
+            }
+        }
+
+        a:last-child:hover {
+            background-color: rgba(0, 0, 0, .2) !important;
+            color: #fff !important;
+        }
+    }
+
+    >p {
+        margin: 0 !important;
+        padding: 2px 8px;
+        display: inline-block;
+        background-color: rgba(0, 0, 0, .3);
+        box-shadow: 0 0 0 1px rgba(255, 255, 255, .3);
+        border-radius: 10px;
+
+    }
+
+    a {
+        >img.mm-padding {
+            margin-bottom: 0;
+            padding: 0;
+            width: 60px !important;
+        }
+
+        &:hover {
+            text-decoration: none !important;
+        }
+    }
+}
+
+// HEADER
+.text-middle.mm-container.mm-card-2.mm-white.mm-round.mm-margin-bottom.col-lg-12 {
+    >h1 {
+        text-align: center !important;
+        padding: 15px 0;
+        margin-bottom: 0;
+    }
+}
+
+//Formulario para login 
+.mm-card-2.mm-round.mm-white.mm-row-padding.mm-col.mm-padding.mm-margin-bottom.mm-center {
+
+    padding: 0 !important;
+
+    .mm-container {
+        padding: 0 !important;
+
+        fieldset {
+            display: inline !important;
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+    }
+}
+
+// MAIN PAGE
+* {
+
+    .container,
+    .mm-container.mm-theme.l5 {}
+}
+
+.container {
+    margin-top: 0 !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    >.mm-card-2.mm-round.mm-white.mm-margin-bottom.mm-margin-top.mm-padding {
+        margin-top: 50px !important;
+    }
+
+    #esquerda {
+        >.mm-card-2.mm-round.mm-white.mm-padding.mm-margin {
+            width: max-content;
+            box-shadow: 0 0 0 2px #67cb98d9 !important;
+        }
+    }
+
+
+
+
+    #alertas {
+        width: auto;
+
+        table {
+            width: max-content;
+
+            td {
+                color: #3bab71 !important;
+                font-weight: bold;
+            }
+        }
+    }
+
+    #conteudos {
+
+        form[name="Saida"],
+        form[name="VoltarPainelC"],
+        a {
+            text-align: center;
+        }
+    }
+}
+
+
+.mm-container.mm-theme-l5,
+.container {
+    min-height: 100vh;
+    padding: 0 15px;
+
+    .mm-round,
+    .mm-round-medium,
+    .buttonnew.mm-theme-l1 {
+        border-radius: 0 !important;
+        box-shadow: 0 0 0 1px rgba(0, 0, 0, .15);
+    }
+
+    #centro .col-lg-12.text-center>a {
+        padding: 10px 15px;
+        text-decoration: none;
+        display: inline-block !important;
+        width: auto !important;
+        color: #555;
+        transition-duration: 0.2s;
+        font-weight: 500;
+
+        &:hover {
+            background-color: #2196f3;
+            color: #fff;
+        }
+    }
+
+    #centro .col-lg-12.text-center>a,
+    .mm-button,
+    .buttonnew.mm-theme-l1 {
+        color: #000 !important;
+        box-sizing: content-box;
+        border-radius: 25px !important;
+        width: 95%;
+        transition-property: background-color, color, box-shadow;
+        transition: ease-out .4s;
+        background-color: #fff !important;
+        box-shadow: inset 0 0 0 3px rgba(0, 0, 0, .15);
+
+        &:hover {
+            background-color: #2196f3 !important;
+        }
+
+        &:hover,
+        &:focus {
+            box-shadow: inset 0 0 0 6px rgba(0, 0, 0, .5);
+        }
+    }
+
+    >.row {}
+
+    >.mm-row {
+
+        // 3 ELEMENTOS PRINCIPAIS
+        >div:last-child {
+            padding: 0 !important;
+
+            // Pai dos 3 elementos
+            >div:last-child {
+
+                >* {
+                    padding: 0 5px;
+                }
+            }
+
+            #esquerda {
+                .buttonnew.mm-theme-l1 {
+                    background-color: transparent !important;
+                }
+
+                .mm-card-2.mm-round.mm-border-0.mm-margin-bottom {
+                    // background-color: #2196f3;
+
+                    a {
+                        border-radius: 0 !important;
+                        background-color: #2196f3 !important;
+                        text-decoration: none;
+                        transition: ease .3s background-color;
+                        margin: 0.5px 0;
+
+                        &:hover {
+                            background-color: rgba(0, 0, 0, 0.5) !important;
+                        }
+                    }
+                }
+            }
+
+            #direita {
+                a.buttonnew.mm-block.mm-theme-l1.mm-margin-bottom {
+                    border-radius: 0 !important;
+                }
+                // Formulario USUARIO
+                >div:nth-child(4) {
+                    margin: 0 0 16px 0 !important;
+                    padding: 0 !important;
+                }
+            }
+
+            #centro {
+
+
+                .mm-button.mm-theme-l1,
+                .mm-button.mm-theme {
+                    margin-top: 10px;
+                }
+
+                >div,
+                >div:nth-child(2)>div {
+                    padding: 0 !important;
+                }
+
+                >div:nth-child(2) {
+                    position: relative;
+                    display: flex;
+
+                    >div {
+                        position: relative;
+                        float: none;
+                        clear: none;
+                        max-width: 100%;
+                    }
+                }
+
+                legend {
+                    margin-bottom: 0;
+                }
+
+                h6 {
+                    padding: 15px 0;
+                    background: #2196f3;
+                    color: #fff;
+                    margin-bottom: 0;
+                }
+
+                .mm-card-2.mm-round.mm-white.mm-row-padding.mm-col.mm-padding.mm-margin-bottom {
+                    ::-webkit-scrollbar {
+                        background: linear-gradient(180deg, rgba(0, 0, 0, 0.3), transparent);
+                        width: 15px;
+                    }
+
+                    ::-webkit-scrollbar-thumb {
+                        background: linear-gradient(45deg, rgba(255, 255, 255, .3), transparent);
+                        box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .2);
+                        border-radius: 10px;
+                    }
+
+                    ::-webkit-resizer {}
+                }
+
+                // itens comuns
+                form {
+                    margin-block-end: 0 !important;
+
+                    select {
+                        height: auto !important;
+                        padding: 0 !important;
+                        resize: none !important;
+                        background-color: transparent !important;
+
+                    }
+
+                    option {
+                        &:nth-child(2n) {
+                            background-color: rgba(0, 0, 0, .18);
+                        }
+
+                        padding: 3px 0;
+                        margin: 1px 0;
+                        //box-shadow: inset 0 0 0 2px rgba(0, 0, 0, .3);
+
+                        color: white !important;
+                        text-shadow: 0 1px 3px black;
+
+                        &:active {
+                            color: black !important;
+                            text-shadow: none !important;
+                        }
+                    }
+                }
+
+                form#Pendencias {
+                    background-color: #d81b1b;
+                }
+
+                form#PendenciasSP {
+                    background-color: #d3c630;
+                    color: rgba(0, 0, 0, .8) !important;
+                    text-shadow: none;
+                }
+
+                form#PendenciasR {
+                    background-color: #209C20;
+                }
+            }
+        }
+    }
+
+}
+
+footer {
+
+    p {
+        text-align: center !important;
+        margin-top: 15px;
+    }
+}
