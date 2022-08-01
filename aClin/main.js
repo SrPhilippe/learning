@@ -3,7 +3,7 @@ Exemple to get the parameter code:
 let locate = new URL(location.href).searchParams.get('code')
  */
 
-const myRequest = 'https://raw.githubusercontent.com/SrPhilippe/learning/master/aClin/img/style.css',
+const myRequest = 'https://raw.githubusercontent.com/SrPhilippe/learning/master/aClin/style.css',
       url = document.location
 
 function addStyle(source) {
