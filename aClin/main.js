@@ -1,9 +1,11 @@
-/* Functions to use some time to get parameters in the URL
-Exemple to get the parameter code:
-let locate = new URL(location.href).searchParams.get('code')
+/*
+Functions to use some time to get parameters in the URL
+Exemple to get the parameter code: let locate = new URL(location.href).searchParams.get('code')
  */
 
-const myRequest = 'https://raw.githubusercontent.com/SrPhilippe/learning/master/aClin/style.css',
+const
+  myRequest = 'https://raw.githubusercontent.com/SrPhilippe/learning/master/aClin/style.css',
+  scriptMessage = `Aclin script V${version} is running into the website.`
   url = document.location,
   version = "1.3"
 
@@ -15,7 +17,8 @@ if (url.pathname != "/index.html") {
 }
 
 function addStyle(source) {
-  const $body = document.getElementsByTagName("body")[0],
+  const
+    $body = document.getElementsByTagName("body")[0],
     $style = document.createElement("style")
 
   $style.classList.add('aClin-custom-css')
@@ -30,14 +33,15 @@ function addStyle(source) {
     .catch(err => console.log(err))
 }
 
-let elMiddle = document.querySelector('#centro'),
+let
+  elMiddle = document.querySelector('#centro'),
   elLeft = document.querySelector('#esquerda'),
   elRight = document.querySelector('#direita'),
   mmThemel5 = document.querySelector('body > .mm-container.mm-theme-l5'),
   mainMenu = document.querySelector('.mm-bar.mm-blue.mm-left-align.mm-large'),
   mainSelection = mmThemel5.firstElementChild,
   definedSelection,
-  hasParent = false
+  hasParent = false // flag to know about the messed up page
 
 if (mainSelection.children.length == 2) {
   hasParent = true
@@ -61,8 +65,8 @@ elRight.classList.add('col-lg-2');
 
 // Whether is the main page or not
 if (hasParent) {
-  const container = document.createElement('div')
-  container.classList.add('.container')
+  let $div = document.createElement('div')
+  $div.classList.add('container')
 
   // Centralize the title
   mmThemel5.querySelector('.mm-row').firstElementChild.classList.replace('text-left', 'text-center')
@@ -76,22 +80,25 @@ if (hasParent) {
 }
 
 
-// This part of the code is going to create an UL element inside the menu
-let ulElement = document.createElement('ul'),
+// Fixes the navigation menu, creating an ul element inside it and putting the listed items inside this new ul element.
+let
+  $ul = document.createElement('ul'),
   menuItems = Array.from(mainMenu.children)
 
 menuItems.forEach(el => {
   if (el.tagName !== "P") {
-    ulElement.append(el)
+    $ul.append(el)
   }
 })
 
-mainMenu.prepend(ulElement)
+mainMenu.prepend($ul)
 
-let divbody = document.createElement("div"),
+let
+  divbody = document.createElement("div"),
   body = document.getElementsByTagName("body")[0]
+
 divbody.classList.add("custom-background")
 body.prepend(divbody)
 
-console.log(`Aclin script V${version} is running into the website.`)
-// End of UL element
+// Finishes the code loggin everything is fine
+console.log(scriptMessage)
