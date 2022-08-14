@@ -1,0 +1,39 @@
+{
+    "configurations": [
+        {
+            "type": "msedge",
+            "name": "launch-msedge",
+            "address": "localhost",
+            "port": 5500,
+            "request": "launch",
+            "runtimeArgs": [
+                "--headless",
+                "--remote-debugging-port=9222"
+            ],
+            "url": "http://localhost:5500/", // Provide your project's url to finish configuring
+            "presentation": {
+                "hidden": true
+            },
+            "preLaunchTask": "startLiveServer",
+            "postDebugTask": "stopLiveServer"
+        },
+        {
+            "type": "vscode-edge-devtools.debug",
+            "name": "open-edge-devtools",
+            "request": "attach",
+            "url": "http://localhost:5500/", // Provide your project's url to finish configuring
+            "presentation": {
+                "hidden": true
+            }
+        }
+    ],
+    "compounds": [
+        {
+            "name": "Launch Edge Headless and attach DevTools",
+            "configurations": [
+                "launch-msedge",
+                "open-edge-devtools"
+            ]
+        }
+    ]
+}
