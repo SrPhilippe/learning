@@ -2,17 +2,16 @@
 Functions to use some time to get parameters in the URL
 Exemple to get the parameter code: let locate = new URL(location.href).searchParams.get('code')
  */
-
-const
-  myRequest = 'https://raw.githubusercontent.com/SrPhilippe/learning/master/aClin/style.css',
-  scriptMessage = `Aclin script V${version} is running into the website.`
-  url = document.location,
-  version = "1.3"
-
+const config = {
+  myRequest: "https://raw.githubusercontent.com/SrPhilippe/learning/master/aClin/style.css",
+  scriptMessage: `Aclin script V${this.version} is running into the website.`,
+  url: document.location,
+  verson: "1.3"
+}
 
 // This prevent some bugs when you open the aClin initial page outside the system
-if (url.pathname != "/index.html") {
-  addStyle(myRequest)
+if (config.url.pathname != "/index.html") {
+  addStyle(config.myRequest)
   console.log(`Css custom style applied!`)
 }
 
@@ -101,4 +100,4 @@ divbody.classList.add("custom-background")
 body.prepend(divbody)
 
 // Finishes the code loggin everything is fine
-console.log(scriptMessage)
+console.log(config.scriptMessage)
