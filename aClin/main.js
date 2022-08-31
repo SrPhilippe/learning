@@ -6,7 +6,7 @@ const config = {
   myRequest: "https://raw.githubusercontent.com/SrPhilippe/learning/master/aClin/style.css",
   scriptMessage: `Aclin script V${this.version} is running into the website.`,
   url: document.location,
-  verson: "1.3"
+  version: "1.3"
 }
 
 // This prevent some bugs when you open the aClin initial page outside the system
@@ -93,11 +93,11 @@ menuItems.forEach(el => {
 mainMenu.prepend($ul)
 
 let
-  divbody = document.createElement("div"),
-  body = document.getElementsByTagName("body")[0]
+  $divbody = document.createElement("div"),
+  $body = document.getElementsByTagName("body").item(0)
 
-divbody.classList.add("custom-background")
-body.prepend(divbody)
+$divbody.classList.add("custom-background")
+$body.prepend($divbody)
 
-// Finishes the code loggin everything is fine
+// Finish of the code
 console.log(config.scriptMessage)
