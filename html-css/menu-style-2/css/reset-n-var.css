@@ -1,0 +1,31 @@
+:root {
+    --first-color: #0080d5;
+    --highlight-color: hsl(198, 100%, 75%);
+    --background-dark-color: #282b31;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.container {
+    max-width: 1124px;
+    width: 100%;
+    margin: 0 auto;
+}
