@@ -1,0 +1,61 @@
+@import "reset-n-var.css";
+
+body {
+    font: 18px Roboto, Arial, sans-serif;
+}
+
+.content {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-wrapper {
+    font-size: 40px;
+    color: #AAA;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider {
+    height: 50px;
+    padding-left: 15px;
+    overflow: hidden;
+}
+
+.slider-text {
+    height: 50px;
+    color: #FFF;
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 2px 15px;
+    box-shadow: inset 0 0 0 1.5px rgba(0, 0, 0, .3);
+}
+.slider-text.first {
+    animation: slide-text 9s ease-in-out infinite;
+    margin-top: -200px;
+    background-color: orangered;
+}
+
+.slider-text.second {
+    background-color: deepskyblue;
+}
+
+.slider-text.third {
+    background-color: gold;
+}
+
+@keyframes slide-text {
+    0% {margin-top: -300px;}
+    5% {margin-top: -200px;}
+    33% {margin-top: -200px;}
+    38% {margin-top: -100px;}
+    66% {margin-top: -100px;}
+    71% {margin-top: 0px;}
+    100% {margin-top: 0px;}
+}
