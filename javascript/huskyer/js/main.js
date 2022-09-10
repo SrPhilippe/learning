@@ -1,35 +1,32 @@
-$(document).ready(() => {
-    let dogAPI = "https://dog.ceo/api/breed/husky/images/random"
-    let $app = $("#app")
-    let $bar = $("progress")
+const dogAPI = 'https://dog.ceo/api/breed/husky/images/random',
+	$img = document.querySelector('#app .img-box img'),
+	$button = document.querySelector('#app input.get-husky'),
+	$loading = document.querySelector('#app .loading')
 
-    $(document).on("click", "#app .get-husky", (e) => {
-        newHusky(true)
-    })
-
-    newHusky() // call to the function when the DOCUMENT is ready
-
-    function newHusky(isURL) {
-        fetch(dogAPI)
-            .then((resp) => {
-                return resp.json()
-            })
-            .then((data) => {
-                if (!isURL) {
-                    $app.html(`
-                        <div class="img-box">
-                            <input type="button" class="get-husky" value="GET Husky">
-                            <img src="${data.message}">
-                        </div>
-                        `)
-                } else {
-                    $app.find("img").attr("src", data.message)
-                }
-                console.log(`Your husky ${data.message} is ready`)
-            })
-            .catch((err) => {
-                console.error(err)
-            })
-    }
-
+$button.addEventListener('click', (event) => {
+	event.preventDefault()
+	newHusky(false)
 })
+
+newHusky(true)
+
+function newHusky(isNewInstance) {
+	$loading.classList.toggle('show-hide')
+	if (!isNewInstance) {
+		$img.classList.toggle('show-hide')
+	}
+
+	fetch(dogAPI)
+		.then((resp) => {
+			return resp.json()
+		})
+		.then((data) => {
+			$img.setAttribute('src', data.message)
+		})
+		.then(() => {
+			$img.classList.toggle('show-hide')
+			window.setTimeout(() => {
+				$loading.classList.toggle('show-hide')
+			}, 500)
+		})
+}

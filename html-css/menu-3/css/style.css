@@ -4,6 +4,7 @@
 body {
     font: 18px Oswald, Arial, sans-serif;
     font-weight: 400;
+    /* overflow: hidden; */
 }
 
 /* |------------------------------------------------------- MENU -| */
@@ -80,13 +81,19 @@ body {
 /* |------------------------------------------------------- HEADER INFO -| */
 
 header>.info {
+    position: relative;
     width: 100%;
     display: flex;
     justify-content: center;
     background-color: blue;
+    position: relative;
 }
 
 header>.info p {
+    animation: text-slider linear 5s infinite;
+    left: 100%;
+    min-width: max-content;
+    position: absolute;
     background-color: red;
     font-size: 1rem;
     font-weight: 200;
@@ -97,11 +104,30 @@ header>.info p {
 section .container>h1,
 section>*:first-of-type h1 {
     margin-top: 1.5rem;
-    background-color: red;
-}   
+}
+
+section +:not(.container) {
+    padding: 1.5rem;
+}
+
+section +:not(.container):nth-child(2n+1) {
+    background: gold;
+}
 
 /* |------------------------------------------------------- GRID LAYOUT -| */
 
 .wrapper {
     display: grid;
+}
+
+
+
+@keyframes text-slider {
+    from {
+        left: 100%;
+    }
+
+    to {
+        left: -50%;
+    }
 }

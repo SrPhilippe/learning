@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap');
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -5,57 +7,131 @@
 }
 
 body {
-    background: radial-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .15));
+    font: .93rem Quicksand, sans-serif;
+    background: #e9f9ff;
+    overflow-y: hidden;
 }
 
 img {
     max-width: 100%;
+    max-height: 80vh;
     vertical-align: middle;
+}
+
+
+
+.about {
+    position: fixed;
+    right: 0;
+    top: 0;
+    margin: 1rem 1rem 0 0;
+}
+
+.about>p {
+
+    padding: .55rem;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, .15);
+    background-color: #FFF;
+    margin-bottom: .3rem;
+    max-width: 18rem;
+    color: #6a6a6a;
+}
+
+
+#app,
+#app .img-box {
+    display: flex;
+    align-items: center;
 }
 
 #app {
     height: 100vh;
-    display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 #app .img-box {
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    flex-basis: 300px;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
-#app .img-box img {
-    position: absolute;
+#app .img-box .content {
     width: 100%;
-    border-radius: 50px;
-    box-shadow: 0 0 0 3px #bace16, 0 2px 10px 5px rgba(0, 0, 0, .5);
+    border-radius: 5px;
+    border: 3px solid #bace16;
+}
+
+#app .img-box .loading {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .5);
+    top: 0;
+    left: 0;
+    z-index: 10;
+
+}
+
+#app .img-box .loading.show-hide {
+    display: flex;
+}
+
+#app .img-box .loading .dot {
+    width: 3px;
+    height: 3px;
+    border-radius: 30px;
+    background-color: #bace16;
+    border: 1px solid hsl(67, 81%, 30%);
+    margin: .3rem;
+    animation: 1.2s ease 0s infinite alternate loading;
+}
+
+.dot:nth-child(2) {
+    animation-delay: 400ms !important;
+}
+.dot:nth-child(3) {
+    animation-delay: 800ms !important;
+}
+
+
+
+#app .img-box img {
+    display: none;
+}
+
+#app .img-box img.show-hide {
+    display: block;
+}
+
+@keyframes loading {
+    from { border-width: 0px;}
+    to {width: 10px; height: 10px;}
 }
 
 #app .get-husky {
-    text-shadow: .5px 1px 5px rgba(0, 0, 0, .5);
+    width: -moz-fit-content;
+    width: fit-content;
+    font-family: Quicksand;
+    font-weight: 600;
     transition: .3s ease;
-    margin-top: 15px;
-    top: 0;
     outline: none;
     color: #fff;
     border: 2px solid #bace16;
     background: rgba(0, 0, 0, .5);
     border-radius: 25px;
-    position: absolute;
     cursor: pointer;
     padding: 10px;
     z-index: 1;
 }
 
 #app .get-husky:active {
-    transform: scale(0.93);
+    transform: scale(0.90);
 }
 
 #app .get-husky:hover {
-    color: #bace16;
+    color: #222;
+    background-color: #b9ce1668;
 }
