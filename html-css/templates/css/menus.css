@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Input Sans';
+  font-size: 18px;
+}
+
+a {
+  display: inline-block;
+}
+
+.container {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.menu.orange-pale {
+  background-color: #222;
+}
+
+.menu.orange-pale ul * {
+  transition-duration: 0.4s;
+  transition-property: background-color, padding;
+}
+
+.menu.orange-pale ul {
+  max-width: 1024px;
+  margin: 0 auto;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu.orange-pale ul li > a {
+  color: #ccc;
+  text-decoration: none;
+  display: block;
+  padding: 1em 1.3em;
+}
+
+.menu.orange-pale ul li:hover > a {
+  background-color: rgb(243, 209, 17);
+  color: #222;
+  padding: 1em 1.5em;
+}
+
+.menu.orange-pale ul li:hover > ul {
+  display: flex;
+}
+
+.menu.orange-pale ul li > ul {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  flex-direction: column;
+  max-width: 330px;
+  width: 100%;
+}
+
+.menu.orange-pale ul li > ul li > a {
+  padding-left: 3em;
+}
+
+.menu.orange-pale ul li > ul li:hover > a {
+  background-color: rgba(243, 209, 17, 0.719);
+}
+
+.menu.pos-expand .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu.pos-expand .content .menu-mobile {
+  display: none;
+  position: relative;
+  width: 75px;
+  height: 75px;
+  padding: 26px;
+  cursor: pointer;
+}
+.menu.pos-expand ul {
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  background: linear-gradient(90deg, transparent, #9744e0, transparent);
+  padding: 0 10%;
+}
+
+.menu.pos-expand ul > li > a {
+  transition: all .3s ease;
+  padding: 1em 1.3em;
+  color: #212121;
+  text-decoration: none;
+}
+
+.menu.pos-expand ul > li > a:hover {
+  background-color: #9744e0;
+  color: #fff;
+}
